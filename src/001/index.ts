@@ -9,6 +9,7 @@ import { AppleImage } from "./sub/images";
 // スプライトを作る
 const apple = new Ts.Sprite( "sprite" );
 apple.Costume.add( AppleImage );
+apple.Motion.move.to( [ 0,0 ] );
 
 const _test = async function* ( this: Sprite ) {
     for ( ;; ) {
