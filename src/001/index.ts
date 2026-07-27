@@ -3,17 +3,26 @@
  */
 
 import { Typescratcher as Ts } from "@tscratch3/typescratcher";
-import { Sprite } from "@tscratch3/typescratcher";
+import type { Sprite } from "@tscratch3/typescratcher";
+
+// 画像読み込み
 import { AppleImage } from "./sub/images";
 
 // スプライトを作る
 const apple = new Ts.Sprite( "sprite" );
 apple.Costume.add( AppleImage );
-apple.Motion.move.to( [ 0,0 ] );
+// 位置決め（初期）
+apple.Motion.move.to( [ 0, 0 ] );
 
-const _test = async function* ( this: Sprite ) {
+//「apple」旗が押されたときのイベントスレッド
+const _test = async function* ( this : Sprite ) {
+    // 位置決め（初期）
+    apple.Motion.move.to( [ 0, 0 ] );
+    // ずっと繰り返す
     for ( ;; ) {
+        // 5 進む
         this.Motion.move.steps( 5 );
+        // 次のフレームになるまで休止
         yield;
     }
 };
