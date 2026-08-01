@@ -1,5 +1,6 @@
 /**
  * 画像を読み込みスプライトのコスチュームにする
+ * テスト(2026/08/01)
  */
 
 import { Typescratcher as Ts } from "@tscratch3/typescratcher";
