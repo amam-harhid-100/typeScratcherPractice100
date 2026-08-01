@@ -19,6 +19,8 @@ const typescracher_eslint_config = [
             ],
             // カンマの「前は無し」「後ろはスペース1つ」に強制
             "@stylistic/comma-spacing": [ "error", { "before": false, "after": true } ],
+            // {} の前にスペース1つを強制
+            "@stylistic/space-before-blocks": ["error", "always"],
             // function* () の形式を強制する
             "generator-star-spacing": [ "error", { "before": false, "after": true } ],
             // インデントを4にする

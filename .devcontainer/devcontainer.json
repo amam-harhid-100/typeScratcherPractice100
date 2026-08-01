@@ -1,0 +1,6 @@
+{
+  "name": "Default Custom Config",
+  "postCreateCommand": "",
+  "postStartCommand": "",
+  "postAttachCommand": ""
+}
